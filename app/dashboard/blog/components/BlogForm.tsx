@@ -274,11 +274,3 @@ export default function BlogForm({
     </Form>
   )
 }
-
-const ImgaeEror = ({ src }: { src: string }) => {
-  try {
-    return <Image src={src} alt='' width={100} height={100} />
-  } catch {
-    return <h1>Invalid</h1>
-  }
-}

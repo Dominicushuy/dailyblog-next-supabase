@@ -78,7 +78,7 @@ const onCancelSubscription = async (
   subscription_id: string
 ) => {
   const supabase = await createSupbaseAdmin()
-  const { data, error } = await supabase
+  const { data } = await supabase
     .from('users')
     .update({
       stripe_subscription_id: null,

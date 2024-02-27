@@ -37,6 +37,8 @@ export default async function page({ params }: { params: { id: string } }) {
     process.env.SITE_URL + '/api/blog?id=' + params.id
   ).then((res) => res.json())) as { data: IBlog }
 
+  console.log(blog);
+
   if (!blog?.id) {
     return <h1 className='text-white'>Not found</h1>
   }

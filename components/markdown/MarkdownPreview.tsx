@@ -44,7 +44,7 @@ export default function MarkdownPreview({
 					const id = (Math.floor(Math.random() * 100) + 1).toString();
 					if (match?.length) {
 						let Icon = PiTerminalThin;
-						const isMatch = icons.hasOwnProperty(match[1]);
+						const isMatch = match[1] in icons;
 						if (isMatch) {
 							Icon = icons[match[1] as keyof typeof icons];
 						}
