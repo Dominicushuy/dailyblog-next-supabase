@@ -7,6 +7,7 @@ import React, { ChangeEvent, useTransition } from 'react'
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
 export default function ManageBill({ customerId }: { customerId: string }) {
+  // *** STATE *** //
   const [isPending, startTransition] = useTransition()
   const onSubmit = (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
