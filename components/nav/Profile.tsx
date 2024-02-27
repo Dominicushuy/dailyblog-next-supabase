@@ -16,8 +16,6 @@ export default function Profile() {
   const user = useUser((state) => state.user)
   const setUser = useUser((state) => state.setUser)
 
-  console.log(user)
-
   // *** VARS ***
   const isAdmin = user?.user_metadata?.role === 'admin'
 

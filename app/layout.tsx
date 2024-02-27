@@ -6,6 +6,7 @@ import Navbar from '@/components/nav/Navbar'
 import Container from '@/components/@core/Container'
 import SessisonProvider from '@/components/SessisonProvider'
 import { Toaster } from '@/components/ui/toaster'
+import React from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,8 +32,8 @@ export default function RootLayout({
             <Navbar />
             {children}
           </Container>
-          <Toaster />
         </ThemeProvider>
+        <Toaster />
         <SessisonProvider />
       </body>
     </html>
